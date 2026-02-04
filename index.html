@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <ul id="nav">
+      <li>Profil məlumatları</li>
+      <li>Şəxsi məlumatlar</li>
+      <li>Sosial Media</li>
+    </ul>
+    <form id="form">
+      <fieldset class="active">
+        <legend>Profil Məlumatları</legend>
+        <input type="text" name="email" id="" placeholder="Email" />
+        <input type="text" name="login" id="" placeholder="Login" />
+        <input type="password" name="password" id="" placeholder="Password" />
+      </fieldset>
+      <fieldset>
+        <legend>Şəxsi məlumatlar</legend>
+        <input type="text" name="name" id="" placeholder="Ad" />
+        <input type="text" name="surname" id="" placeholder="Soyad" />
+        <textarea
+          name="detailed"
+          id=""
+          placeholder="Ətraflı Məlumat"
+        ></textarea>
+      </fieldset>
+      <fieldset class="active">
+        <legend>Sosial Media</legend>
+        <input type="text" name="Facebook" placeholder="Facebook" />
+        <input type="text" name="Instagram" placeholder="Instagram" />
+        <input type="text" name="Twitter" placeholder="Twitter" />
+      </fieldset>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
