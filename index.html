@@ -8,19 +8,19 @@
   </head>
   <body>
     <ul id="nav">
-      <li>Profil məlumatları</li>
-      <li>Şəxsi məlumatlar</li>
-      <li>Sosial Media</li>
+      <li class="active">Profil məlumatları</li>
+      <li class="">Şəxsi məlumatlar</li>
+      <li class="">Sosial Media</li>
     </ul>
     <form id="form">
       <fieldset class="active">
-        <legend>Profil Məlumatları</legend>
+        <h2>Profil Məlumatları</h2>
         <input type="text" name="email" id="" placeholder="Email" />
         <input type="text" name="login" id="" placeholder="Login" />
         <input type="password" name="password" id="" placeholder="Password" />
       </fieldset>
       <fieldset>
-        <legend>Şəxsi məlumatlar</legend>
+        <h2>Şəxsi məlumatlar</h2>
         <input type="text" name="name" id="" placeholder="Ad" />
         <input type="text" name="surname" id="" placeholder="Soyad" />
         <textarea
@@ -29,12 +29,20 @@
           placeholder="Ətraflı Məlumat"
         ></textarea>
       </fieldset>
-      <fieldset class="active">
-        <legend>Sosial Media</legend>
+      <fieldset>
+        <h2>Sosial Media</h2>
         <input type="text" name="Facebook" placeholder="Facebook" />
         <input type="text" name="Instagram" placeholder="Instagram" />
         <input type="text" name="Twitter" placeholder="Twitter" />
       </fieldset>
+      <div class="results">
+        <ul></ul>
+      </div>
+      <div class="buttons">
+        <button disabled="true" id="prev" type="button">Geri</button>
+        <button id="next" type="button">İrəli</button>
+        <button id="submit" type="submit">Yadda Saxla</button>
+      </div>
     </form>
     <script src="app.js"></script>
   </body>
